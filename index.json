@@ -1,0 +1,19 @@
+[
+  {
+    "id": "DeckyLoader",
+    "title": "Decky Loader",
+    "summary": "Decky Loader is a program for installing...",
+    "image": "/images/IMG_1328.png",
+    "categories": [
+      "Beginner Guides",
+      "Hardware",
+      "Linux",
+      "Operating Systems",
+      "Setup",
+      "Steam Deck",
+      "Upgrades"
+    ],
+    "author": "Byron",
+    "file": "articles/DeckyLoader.md"
+  }
+]
