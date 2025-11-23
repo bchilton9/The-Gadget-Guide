@@ -1,0 +1,8 @@
+---
+---
+
+  <h2>Welcome to The Gadget Guide</h2>
+  <p>My goal here is to create simple, easy-to-follow tutorials for setting up all your gadgets. I personally don’t like video tutorials — you constantly have to pause, switch between screens, and you can’t easily copy and paste commands. That’s why everything here is <strong>text-based</strong>, with <strong>clear instructions</strong>, <strong>images</strong>, and <strong>copy-paste-ready commands</strong>. I’ll also include direct links to any software or websites you’ll need.</p>
+  <p>I’m keeping these guides as beginner-friendly as possible so <strong>both tech enthusiasts and non-tech users</strong> can follow along with ease.</p>
+  <p>This site is still a work in progress, so there may be a few mistakes or missing details. More guides are on the way soon — thanks for visiting!</p>
+<p> 💖  Enjoying the site or found something useful? You can <a href="https://paypal.me/chilsoft?country.x=US&locale.x=en_US" target="_blank" style="color:#ffffff;">buy me a Lamborghini... or just a cup of coffee</a>. I’m not greedy. ☕</p>

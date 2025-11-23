@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Gadget Guide</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- header loaded by JS -->
+  <div id="header-placeholder"></div>
+
+  <main>
+    <input type="search" id="searchBox" placeholder="Search articles..." aria-label="Search articles" />
+
+    <div id="welcomeBox" class="welcome-box" aria-hidden="false"> </div>
+
+    <section id="articles" aria-live="polite" aria-atomic="true"></section>
+
+    <section id="articleContent" class="article-viewer" style="display:none;"></section>
+
+    <div class="pagination" id="pagination"></div>
+
+    <button id="backButton" style="display:none;" class="button">← Back to Articles</button>
+  </main>
+
+  <!-- footer loaded by JS -->
+  <div id="footer-placeholder"></div>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
