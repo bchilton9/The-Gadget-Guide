@@ -1,5 +1,14 @@
 [
-    {
+  {
+    "id": "welcome",
+    "title": "Welcome",
+    "summary": "Start here!",
+    "image": "/images/welcome.png",
+    "categories": ["Info"],
+    "author": "Byron",
+    "file": "welcome.html"
+  },
+  {
         "id": "tdarr-in-docker",
         "title": "Running Tdarr in Docker for Automated Media Transcoding",
         "summary": "Set up Tdarr in Docker to automatically scan and transcode your media library for efficient storage and playback.",
