@@ -249,9 +249,16 @@ function loadMarkdown(id, filePath) {
     return;
   }
   // cache-buster param to avoid stale content
-  const path = (filePath || (`articles/${id}.md`)) + "?v=" + Date.now();
+  // FIX: Add leading slash for absolute path
+let path;
+if (filePath) {
+  path = filePath.startsWith('/') ? filePath : '/' + filePath;
+} else {
+  path = `/articles/${id}.md`;
+}
+const fullPath = path + "?v=" + Date.now();
 
-  fetch(path).then(r => {
+  fetch(fullPath).then(r => {
     if (!r.ok) throw new Error("Failed to fetch article file: " + r.status);
     return r.text();
   }).then(md => {
