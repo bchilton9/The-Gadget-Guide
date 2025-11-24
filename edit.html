@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Editor - The Gadget Guide</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+```
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  background: #1a1a1a;
+  color: #e0e0e0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #4a9eff;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #888;
+  margin-bottom: 30px;
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+select, button, input, textarea {
+  padding: 10px 15px;
+  border: 1px solid #333;
+  background: #2a2a2a;
+  color: #e0e0e0;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+select {
+  flex: 1;
+  min-width: 200px;
+  cursor: pointer;
+}
+
+button {
+  background: #4a9eff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #3a8eef;
+}
+
+button.danger {
+  background: #ff4a4a;
+}
+
+button.danger:hover {
+  background: #ef3a3a;
+}
+
+.editor-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .editor-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #aaa;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+input[type="text"] {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  min-height: 150px;
+  resize: vertical;
+  font-family: 'Courier New', monospace;
+}
+
+.markdown-editor {
+  min-height: 400px;
+}
+
+.output-section {
+  margin-top: 30px;
+}
+
+.output-box {
+  background: #2a2a2a;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.output-box h3 {
+  color: #4a9eff;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.output-box textarea {
+  width: 100%;
+  min-height: 200px;
+  font-size: 12px;
+  background: #1a1a1a;
+}
+
+.copy-btn {
+  padding: 5px 15px;
+  font-size: 12px;
+}
+
+.success {
+  color: #4eff4a;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.categories-input {
+  display: flex;
+  gap: 10px;
+}
+
+.categories-input input {
+  flex: 1;
+}
+
+.info {
+  background: #2a3a4a;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border-left: 3px solid #4a9eff;
+}
+```
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Article Editor</h1>
+    <p class="subtitle">Edit or create articles for The Gadget Guide</p>
+
+```
+<div class="info">
+  <strong>How to use:</strong> Select an article to edit or click "New Article". Fill in the form, then copy the outputs and paste into Working Copy to commit.
+</div>
+
+<div class="controls">
+  <select id="articleSelect">
+    <option value="">-- Select an article to edit --</option>
+  </select>
+  <button onclick="newArticle()">+ New Article</button>
+  <button onclick="loadFromJson()">🔄 Reload from index.json</button>
+</div>
+
+<div class="editor-grid">
+  <div>
+    <div class="form-group">
+      <label>Article ID (lowercase, no spaces)</label>
+      <input type="text" id="articleId" placeholder="my-article-name">
+    </div>
+    
+    <div class="form-group">
+      <label>Title</label>
+      <input type="text" id="articleTitle" placeholder="Article Title">
+    </div>
+    
+    <div class="form-group">
+      <label>Summary</label>
+      <textarea id="articleSummary" placeholder="Brief description of the article"></textarea>
+    </div>
+    
+    <div class="form-group">
+      <label>Image Path</label>
+      <input type="text" id="articleImage" placeholder="/images/image.png">
+    </div>
+    
+    <div class="form-group">
+      <label>Categories (comma-separated)</label>
+      <input type="text" id="articleCategories" placeholder="Steam Deck, Gaming, Setup">
+    </div>
+    
+    <div class="form-group">
+      <label>Author</label>
+      <input type="text" id="articleAuthor" placeholder="Byron">
+    </div>
+  </div>
+  
+  <div>
+    <div class="form-group">
+      <label>Markdown Content</label>
+      <textarea id="articleMarkdown" class="markdown-editor" placeholder="---
+```
+
+## title: Your Title Here
+summary: Your summary
+image: /images/image.png
+categories: [Category1, Category2]
+author: Byron
+
+# Your Article Content Here
+
+Write your article in markdown…"></textarea>
+</div>
+</div>
+</div>
+
+```
+<div class="controls">
+  <button onclick="generateOutputs()">✨ Generate Outputs</button>
+  <button class="danger" onclick="deleteArticle()" id="deleteBtn" style="display:none;">🗑️ Delete Article</button>
+</div>
+
+<div class="output-section" id="outputSection" style="display:none;">
+  <div class="output-box">
+    <h3>
+      📄 Updated index.json
+      <button class="copy-btn" onclick="copyToClipboard('jsonOutput')">Copy</button>
+      <span class="success" id="jsonCopied" style="display:none;">✓ Copied!</span>
+    </h3>
+    <textarea id="jsonOutput" readonly></textarea>
+  </div>
+  
+  <div class="output-box">
+    <h3>
+      📝 Markdown File Content
+      <button class="copy-btn" onclick="copyToClipboard('mdOutput')">Copy</button>
+      <span class="success" id="mdCopied" style="display:none;">✓ Copied!</span>
+    </h3>
+    <p style="font-size: 12px; color: #888; margin-bottom: 10px;">
+      Save as: <code id="mdFilename" style="color: #4a9eff;">articles/filename.md</code>
+    </p>
+    <textarea id="mdOutput" readonly></textarea>
+  </div>
+</div>
+```
+
+  </div>
+
+  <script>
+    let allArticles = [];
+    let currentEditingId = null;
+    
+    // Load index.json on page load
+    async function loadFromJson() {
+      try {
+        const response = await fetch('/index.json');
+        if (!response.ok) throw new Error('Failed to load index.json');
+        allArticles = await response.json();
+        
+        const select = document.getElementById('articleSelect');
+        select.innerHTML = '<option value="">-- Select an article to edit --</option>';
+        
+        allArticles.forEach((article, index) => {
+          const option = document.createElement('option');
+          option.value = index;
+          option.textContent = article.title;
+          select.appendChild(option);
+        });
+        
+        console.log('Loaded', allArticles.length, 'articles');
+      } catch (error) {
+        alert('Error loading index.json: ' + error.message);
+      }
+    }
+    
+    // Load article into form
+    document.getElementById('articleSelect').addEventListener('change', (e) => {
+      const index = e.target.value;
+      if (index === '') {
+        clearForm();
+        return;
+      }
+      
+      const article = allArticles[index];
+      currentEditingId = article.id;
+      
+      document.getElementById('articleId').value = article.id;
+      document.getElementById('articleTitle').value = article.title;
+      document.getElementById('articleSummary').value = article.summary || '';
+      document.getElementById('articleImage').value = article.image || '';
+      document.getElementById('articleCategories').value = (article.categories || []).join(', ');
+      document.getElementById('articleAuthor').value = article.author || '';
+      
+      // Load markdown file
+      loadMarkdownFile(article.file || `articles/${article.id}.md`);
+      
+      document.getElementById('deleteBtn').style.display = 'inline-block';
+      document.getElementById('outputSection').style.display = 'none';
+    });
+    
+    // Load markdown file content
+    async function loadMarkdownFile(path) {
+      try {
+        const fullPath = path.startsWith('/') ? path : '/' + path;
+        const response = await fetch(fullPath);
+        if (!response.ok) throw new Error('Markdown file not found');
+        const content = await response.text();
+        document.getElementById('articleMarkdown').value = content;
+      } catch (error) {
+        console.warn('Could not load markdown:', error);
+        document.getElementById('articleMarkdown').value = generateDefaultMarkdown();
+      }
+    }
+    
+    // Generate default markdown template
+    function generateDefaultMarkdown() {
+      const title = document.getElementById('articleTitle').value || 'Article Title';
+      const summary = document.getElementById('articleSummary').value || 'Article summary';
+      const image = document.getElementById('articleImage').value || '/images/No-Image.png';
+      const categories = document.getElementById('articleCategories').value.split(',').map(c => c.trim()).filter(Boolean);
+      const author = document.getElementById('articleAuthor').value || 'Byron';
+      
+      return `---
+title: "${title}"
+summary: "${summary}"
+image: "${image}"
+categories: [${categories.map(c => `"${c}"`).join(', ')}]
+author: "${author}"
+---
+
+# ${title}
+
+Write your article content here...
+`;
+    }
+    
+    // New article
+    function newArticle() {
+      clearForm();
+      currentEditingId = null;
+      document.getElementById('articleMarkdown').value = generateDefaultMarkdown();
+      document.getElementById('articleSelect').value = '';
+      document.getElementById('deleteBtn').style.display = 'none';
+      document.getElementById('outputSection').style.display = 'none';
+    }
+    
+    // Clear form
+    function clearForm() {
+      document.getElementById('articleId').value = '';
+      document.getElementById('articleTitle').value = '';
+      document.getElementById('articleSummary').value = '';
+      document.getElementById('articleImage').value = '';
+      document.getElementById('articleCategories').value = '';
+      document.getElementById('articleAuthor').value = '';
+      document.getElementById('articleMarkdown').value = '';
+      currentEditingId = null;
+    }
+    
+    // Generate outputs
+    function generateOutputs() {
+      const id = document.getElementById('articleId').value.trim();
+      const title = document.getElementById('articleTitle').value.trim();
+      const summary = document.getElementById('articleSummary').value.trim();
+      const image = document.getElementById('articleImage').value.trim();
+      const categories = document.getElementById('articleCategories').value
+        .split(',')
+        .map(c => c.trim())
+        .filter(Boolean);
+      const author = document.getElementById('articleAuthor').value.trim();
+      const markdown = document.getElementById('articleMarkdown').value;
+      
+      if (!id || !title) {
+        alert('Article ID and Title are required!');
+        return;
+      }
+      
+      // Create article object
+      const newArticle = {
+        id: id,
+        title: title,
+        summary: summary,
+        image: image || '/images/No-Image.png',
+        categories: categories,
+        author: author,
+        file: `articles/${id}.md`
+      };
+      
+      // Update or add to articles array
+      let updatedArticles;
+      if (currentEditingId && currentEditingId !== id) {
+        // ID changed, remove old and add new
+        updatedArticles = allArticles.filter(a => a.id !== currentEditingId);
+        updatedArticles.push(newArticle);
+      } else {
+        const existingIndex = allArticles.findIndex(a => a.id === id);
+        if (existingIndex >= 0) {
+          // Update existing
+          updatedArticles = [...allArticles];
+          updatedArticles[existingIndex] = newArticle;
+        } else {
+          // Add new
+          updatedArticles = [...allArticles, newArticle];
+        }
+      }
+      
+      // Sort by title
+      updatedArticles.sort((a, b) => a.title.localeCompare(b.title));
+      
+      // Generate outputs
+      document.getElementById('jsonOutput').value = JSON.stringify(updatedArticles, null, 2);
+      document.getElementById('mdOutput').value = markdown;
+      document.getElementById('mdFilename').textContent = `articles/${id}.md`;
+      
+      document.getElementById('outputSection').style.display = 'block';
+      document.getElementById('outputSection').scrollIntoView({ behavior: 'smooth' });
+    }
+    
+    // Delete article
+    function deleteArticle() {
+      if (!currentEditingId) return;
+      
+      if (!confirm(`Are you sure you want to delete "${currentEditingId}"?`)) return;
+      
+      const updatedArticles = allArticles.filter(a => a.id !== currentEditingId);
+      
+      document.getElementById('jsonOutput').value = JSON.stringify(updatedArticles, null, 2);
+      document.getElementById('mdOutput').value = '# This article should be deleted from the articles folder';
+      document.getElementById('mdFilename').textContent = `DELETE: articles/${currentEditingId}.md`;
+      
+      document.getElementById('outputSection').style.display = 'block';
+      clearForm();
+    }
+    
+    // Copy to clipboard
+    async function copyToClipboard(elementId) {
+      const element = document.getElementById(elementId);
+      const text = element.value;
+      
+      try {
+        await navigator.clipboard.writeText(text);
+        const indicator = document.getElementById(elementId === 'jsonOutput' ? 'jsonCopied' : 'mdCopied');
+        indicator.style.display = 'inline';
+        setTimeout(() => {
+          indicator.style.display = 'none';
+        }, 2000);
+      } catch (err) {
+        // Fallback for older browsers
+        element.select();
+        document.execCommand('copy');
+        alert('Copied to clipboard!');
+      }
+    }
+    
+    // Load on page load
+    loadFromJson();
+  </script>
+
+</body>
+</html>
