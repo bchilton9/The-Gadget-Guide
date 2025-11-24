@@ -263,7 +263,7 @@ const fullPath = path + "?v=" + Date.now();
     return r.text();
   }).then(md => {
     const parsed = parseFrontmatter(md);
-    const html = (window.marked) ? marked(parsed.content || md) : (parsed.content || md);
+    const html = (window.marked) ? marked.parse(parsed.content || md) : (parsed.content || md);
 
     document.getElementById("articles").style.display = "none";
     document.getElementById("searchBox").style.display = "none";
