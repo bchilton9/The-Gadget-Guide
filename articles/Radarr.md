@@ -3,7 +3,7 @@ title: "Radarr"
 summary: "Radarr is an automated movie management tool that tracks movies you want, searches for releases,
 downloads them via your download client, renames them, and moves them into your movie library.
 It integrates with Plex, Jellyfin, and Emby."
-image: "/images/IMG_1328.png"
+image: "/images/No-Image.png"
 categories: "Beginner Guides, Hardware, Linux, Operating Systems, Setup, Tadarr, Upgrades"
 author: "Byron"
 ---

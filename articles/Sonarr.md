@@ -3,7 +3,7 @@ title: "Sonarr"
 summary: "Sonarr is an automated TV show management tool. It monitors TV series you want,
 searches for new episodes, downloads them automatically through your download client,
 renames them, and organizes them into your TV library. It integrates with Plex, Jellyfin, and Emby."
-image: "/images/IMG_1328.png"
+image: "/images/No-Image.png"
 categories: "Beginner Guides, Hardware, Linux, Operating Systems, Setup, Sonarr, Upgrades"
 author: "Byron"
 ---
