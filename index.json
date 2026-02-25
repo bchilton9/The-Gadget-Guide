@@ -1,803 +1,812 @@
 [
   {
-        "id": "tdarr-in-docker",
-        "title": "Running Tdarr in Docker for Automated Media Transcoding",
-        "summary": "Set up Tdarr in Docker to automatically scan and transcode your media library for efficient storage and playback.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Docker",
-            "Media",
-            "Transcoding",
-            "Containers"
-        ],
-        "author": "Unfinished",
-        "file": "articles/tdarr-in-docker.md"
-    },
-    {
-        "id": "mount-nas-linux-steamdeck",
-        "title": "Mounting a NAS Share on Steam Deck or Linux",
-        "summary": "Learn how to access your NAS from a Steam Deck or Linux system using SMB or NFS protocols.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Steam Deck",
-            "NAS",
-            "Linux",
-            "Networking"
-        ],
-        "author": "Unfinished",
-        "file": "articles/mount-nas-linux-steamdeck.md"
-    },
-    {
-        "id": "remote-desktop-vnc-rdp-pi",
-        "title": "Remote Desktop to Raspberry Pi with VNC and RDP",
-        "summary": "Access your Raspberry Pi remotely with a full desktop interface using either VNC or Microsoft RDP.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Raspberry Pi",
-            "Remote Access",
-            "VNC",
-            "RDP"
-        ],
-        "author": "Unfinished",
-        "file": "articles/remote-desktop-vnc-rdp-pi.md"
-    },
-    {
-        "id": "retroachievements-steamdeck",
-        "title": "Enable RetroAchievements on Steam Deck with EmuDeck",
-        "summary": "Unlock achievements in retro games using EmuDeck and RetroArch with RetroAchievements integration.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Steam Deck",
-            "Emulation",
-            "RetroArch",
-            "Setup"
-        ],
-        "author": "Unfinished",
-        "file": "articles/retroachievements-steamdeck.md"
-    },
-    {
-        "id": "installing-emudeck",
-        "title": "Installing EmuDeck on Steam Deck",
-        "summary": "Complete setup guide for EmuDeck on the Steam Deck, including configuration tips and troubleshooting.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Steam Deck",
-            "Emulation",
-            "EmuDeck",
-            "Setup"
-        ],
-        "author": "Unfinished",
-        "file": "articles/installing-emudeck.md"
-    },
-    {
-        "id": "SettingUpEmuDeck",
-        "title": "Setting Up EmuDeck",
-        "summary": "Setup and configure EmuDeck on your Steam Deck with ROMs, BIOS files, cloud services, and Steam library integration.",
-        "image": "/images/IMG_1301.png",
-        "categories": [
-            "Gaming",
-            "Gaming Setup",
-            "Linux",
-            "Steam Deck",
-            "EmuDeck"
-        ],
-        "author": "Byron",
-        "file": "articles/SettingUpEmuDeck.md"
-    },
-    {
-        "id": "PluginCSSLoader",
-        "title": "Plugin: CSS Loader",
-        "summary": "CSS Loader is a Decky Loader plugin to customize the theme and layout of your Game Mode Library.",
-        "image": "/images/IMG_1334.png",
-        "categories": [
-            "Gaming",
-            "Steam Deck"
-        ],
-        "author": "Byron",
-        "file": "articles/PluginCSSLoader.md"
-    },
-    {
-        "id": "PluginSteamGridDB",
-        "title": "Plugin: SteamGridDB",
-        "summary": "SteamGridDB is a Decky Loader plugin to add custom artwork to your games.",
-        "image": "/images/IMG_1330.png",
-        "categories": [
-            "Gaming",
-            "Steam Deck"
-        ],
-        "author": "Byron",
-        "file": "articles/PluginSteamGridDB.md"
-    },
-    {
-        "id": "DeckyPlugins",
-        "title": "Decky Loader Plugins",
-        "summary": "List of plugins for DeckyLoader",
-        "image": "/images/IMG_1323.png",
-        "categories": [
-            "Hardware",
-            "Setup",
-            "Steam Deck"
-        ],
-        "author": "Byron",
-        "file": "articles/DeckyPlugins.md"
-    },
-    {
-        "id": "DeckyLoader",
-        "title": "Decky Loader",
-        "summary": "Decky Loader is a program for installing 3rd party plugins into Game Mode. There is a lot of QOL and customization plugins available.",
-        "image": "/images/IMG_1328.png",
-        "categories": [
-            "Beginner Guides",
-            "Hardware",
-            "Linux",
-            "Operating Systems",
-            "Setup",
-            "Steam Deck",
-            "Upgrades"
-        ],
-        "author": "Byron",
-        "file": "articles/DeckyLoader.md"
-    },
-    {
-        "id": "SUDOPassword",
-        "title": "SUDO Password",
-        "summary": "The SUDO password is the super user password. Similar to the Administrator account on Windows. It is needed to install anything that uses or changes the secure part of the system.",
-        "image": "/images/IMG_1290.png",
-        "categories": [
-            "Gaming",
-            "Steam Deck"
-        ],
-        "author": "Byron",
-        "file": "articles/SUDOPassword.md"
-    },
-    {
-        "id": "restore-duplicati-backups",
-        "title": "Restoring Files with Duplicati",
-        "summary": "Learn how to safely and efficiently restore files from Duplicati backups.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Backup",
-            "Duplicati",
-            "Restore",
-            "Security"
-        ],
-        "author": "Unfinished",
-        "file": "articles/restore-duplicati-backups.md"
-    },
-    {
-        "id": "automated-backups-duplicati",
-        "title": "Automated Backups with Duplicati",
-        "summary": "Learn how to set up automated encrypted backups using Duplicati on any system.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Backup",
-            "Duplicati",
-            "Automation",
-            "Security"
-        ],
-        "author": "Unfinished",
-        "file": "articles/automated-backups-duplicati.md"
-    },
-    {
-        "id": "syncthing-docker-setup",
-        "title": "Run Syncthing in Docker",
-        "summary": "Deploy Syncthing in a Docker container for easy, lightweight, and secure file syncing.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Syncthing",
-            "Docker",
-            "Containers",
-            "File Sync"
-        ],
-        "author": "Unfinished",
-        "file": "articles/syncthing-docker-setup.md"
-    },
-    {
-        "id": "syncthing-windows-setup",
-        "title": "Install and Use Syncthing on Windows",
-        "summary": "Learn how to install and run Syncthing on Windows to securely sync files between your devices.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Syncthing",
-            "Windows",
-            "File Sync"
-        ],
-        "author": "Unfinished",
-        "file": "articles/syncthing-windows-setup.md"
-    },
-    {
-        "id": "syncthing-steamdeck-background",
-        "title": "Run Syncthing in the Background on Steam Deck",
-        "summary": "Learn how to install Syncthing and keep it running in the background on your Steam Deck for seamless file syncing.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Syncthing",
-            "Steam Deck",
-            "File Sync",
-            "Linux"
-        ],
-        "author": "Unfinished",
-        "file": "articles/syncthing-steamdeck-background.md"
-    },
-    {
-        "id": "syncthing-raspberrypi-pc-sync",
-        "title": "Sync Folders Between Raspberry Pi and PC with Syncthing",
-        "summary": "Learn how to keep files in sync between your Raspberry Pi and desktop using Syncthing.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Syncthing",
-            "Raspberry Pi",
-            "File Sync",
-            "Networking"
-        ],
-        "author": "Unfinished",
-        "file": "articles/syncthing-raspberrypi-pc-sync.md"
-    },
-    {
-        "id": "syncthing-omv",
-        "title": "Install and Configure Syncthing on OpenMediaVault",
-        "summary": "Learn how to set up Syncthing on OMV to automatically sync files between your devices securely.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "OpenMediaVault",
-            "Syncthing",
-            "File Sync"
-        ],
-        "author": "Unfinished",
-        "file": "articles/syncthing-omv.md"
-    },
-    {
-        "id": "uptime-kuma-omv",
-        "title": "Install Uptime Kuma in Docker on OpenMediaVault",
-        "summary": "Use Docker on OMV to run Uptime Kuma, a self-hosted uptime monitoring tool with a slick UI.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "OpenMediaVault",
-            "Docker",
-            "Monitoring",
-            "Uptime Kuma"
-        ],
-        "author": "Unfinished",
-        "file": "articles/uptime-kuma-omv.md"
-    },
-    {
-        "id": "tailscale-omv-remote-access",
-        "title": "Set Up Tailscale on OpenMediaVault for Secure Remote Access",
-        "summary": "Install and configure Tailscale on OMV to securely access your NAS and containers remotely without needing to open ports or use DDNS.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "OpenMediaVault",
-            "Remote Access",
-            "Networking",
-            "Tailscale"
-        ],
-        "author": "Unfinished",
-        "file": "articles/tailscale-omv-remote-access.md"
-    },
-    {
-        "id": "install-omv-old-pc",
-        "title": "Install OpenMediaVault on an Old PC",
-        "summary": "Repurpose your old computer into a powerful NAS with OpenMediaVault.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "OpenMediaVault",
-            "Old Hardware",
-            "NAS",
-            "Repurposing"
-        ],
-        "author": "Unfinished",
-        "file": "articles/install-omv-old-pc.md"
-    },
-    {
-        "id": "omv-docker-plex",
-        "title": "Set Up Plex in Docker with OpenMediaVault",
-        "summary": "Deploy Plex Media Server using Docker and Portainer on OMV to stream your movies, TV shows, and music with ease.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "OpenMediaVault",
-            "Docker",
-            "Plex",
-            "Media Server",
-            "Containers"
-        ],
-        "author": "Unfinished",
-        "file": "articles/omv-docker-plex.md"
-    },
-    {
-        "id": "omv-docker-lidarr",
-        "title": "Set Up Lidarr in Docker with OpenMediaVault",
-        "summary": "Learn how to deploy Lidarr in a Docker container on OMV to automatically manage your music library with rich metadata and automation.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "OpenMediaVault",
-            "Docker",
-            "Lidarr",
-            "Containers",
-            "Music"
-        ],
-        "author": "Unfinished",
-        "file": "articles/omv-docker-lidarr.md"
-    },
-    {
-        "id": "omv-docker-nginxproxymanager",
-        "title": "Set Up Nginx Proxy Manager in Docker on OpenMediaVault",
-        "summary": "Learn how to deploy Nginx Proxy Manager in a Docker container on OMV to manage reverse proxies and secure access with HTTPS.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "OpenMediaVault",
-            "Docker",
-            "Nginx Proxy Manager",
-            "Networking",
-            "Containers"
-        ],
-        "author": "Unfinished",
-        "file": "articles/omv-docker-nginxproxymanager.md"
-    },
-    {
-        "id": "omv-docker-radarr",
-        "title": "Set Up Radarr in Docker with OpenMediaVault",
-        "summary": "Learn how to deploy Radarr in a Docker container on OMV to automate downloading and organizing movies.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "OpenMediaVault",
-            "Docker",
-            "Radarr",
-            "Media Server",
-            "Containers"
-        ],
-        "author": "Unfinished",
-        "file": "articles/omv-docker-radarr.md"
-    },
-    {
-        "id": "omv-docker-sonarr",
-        "title": "Set Up Sonarr in Docker with OpenMediaVault",
-        "summary": "Learn how to deploy Sonarr in a Docker container on OMV to automatically manage and download your TV shows.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "OpenMediaVault",
-            "Docker",
-            "Sonarr",
-            "Media Server",
-            "Containers"
-        ],
-        "author": "Unfinished",
-        "file": "articles/omv-docker-sonarr.md"
-    },
-    {
-        "id": "omv-ftp-access",
-        "title": "Configure FTP Access on OpenMediaVault for External Transfers",
-        "summary": "Learn how to enable and secure FTP on OMV to transfer files externally or through custom apps and clients.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "OpenMediaVault",
-            "FTP",
-            "File Transfer",
-            "NAS",
-            "Remote Access"
-        ],
-        "author": "Unfinished",
-        "file": "articles/omv-ftp-access.md"
-    },
-    {
-        "id": "omv-rsync-backup-server",
-        "title": "Set Up OpenMediaVault as an Rsync Backup Server",
-        "summary": "Learn how to configure OMV as a backup destination using Rsync for efficient, incremental file syncing across your network.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "OpenMediaVault",
-            "Backup",
-            "Rsync",
-            "NAS",
-            "Storage"
-        ],
-        "author": "Unfinished",
-        "file": "articles/omv-rsync-backup-server.md"
-    },
-    {
-        "id": "omv-smb-cifs-setup",
-        "title": "Enable Remote SMB/CIFS Access in OpenMediaVault",
-        "summary": "Learn how to share files from your OMV NAS using SMB/CIFS to access them from Windows, macOS, or Linux.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "OpenMediaVault",
-            "File Sharing",
-            "SMB",
-            "CIFS",
-            "NAS"
-        ],
-        "author": "Unfinished",
-        "file": "articles/omv-smb-cifs-setup.md"
-    },
-    {
-        "id": "omv-remote-access-ddns",
-        "title": "Access Your OpenMediaVault NAS Remotely with Dynamic DNS (DDNS)",
-        "summary": "Securely connect to your OMV server from anywhere using Dynamic DNS and port forwarding.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "OpenMediaVault",
-            "Networking",
-            "Remote Access",
-            "DDNS"
-        ],
-        "author": "Unfinished",
-        "file": "articles/omv-remote-access-ddns.md"
-    },
-    {
-        "id": "omv-smart-monitoring",
-        "title": "Monitor Drive Health with SMART and Email Alerts in OpenMediaVault",
-        "summary": "Configure SMART monitoring and email alerts to protect your NAS from early drive failures.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "OpenMediaVault",
-            "Monitoring",
-            "SMART",
-            "Email Alerts",
-            "Storage"
-        ],
-        "author": "Unfinished",
-        "file": "articles/omv-smart-monitoring.md"
-    },
-    {
-        "id": "omv-usb-backups",
-        "title": "Set Up Automatic Backups to External Drives in OpenMediaVault",
-        "summary": "Configure scheduled backups from OMV to USB drives for redundancy and peace of mind.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "OpenMediaVault",
-            "Backup",
-            "USB",
-            "Storage",
-            "Automation"
-        ],
-        "author": "Unfinished",
-        "file": "articles/omv-usb-backups.md"
-    },
-    {
-        "id": "omv-time-machine-macos",
-        "title": "Set Up a Time Machine Backup Server with OpenMediaVault for macOS",
-        "summary": "Turn your OMV NAS into a Time Machine-compatible backup destination for all your Mac devices over the network.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "OpenMediaVault",
-            "macOS",
-            "Backup",
-            "Time Machine",
-            "Home Server"
-        ],
-        "author": "Unfinished",
-        "file": "articles/omv-time-machine-macos.md"
-    },
-    {
-        "id": "enable-docker-portainer-omv",
-        "title": "Enable Docker and Portainer in OpenMediaVault",
-        "summary": "Learn how to run Docker containers and manage them easily through the Portainer interface in OMV.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "OpenMediaVault",
-            "Docker",
-            "Portainer",
-            "Raspberry Pi",
-            "Self-Hosting"
-        ],
-        "author": "Unfinished",
-        "file": "articles/enable-docker-portainer-omv.md"
-    },
-    {
-        "id": "openmediavault-nas-raspberrypi",
-        "title": "Set Up a NAS Server with OpenMediaVault on Raspberry Pi",
-        "summary": "Transform your Raspberry Pi into a powerful home NAS using OpenMediaVault for file sharing, backups, and media streaming.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Raspberry Pi",
-            "OpenMediaVault",
-            "NAS",
-            "Storage",
-            "Home Server"
-        ],
-        "author": "Unfinished",
-        "file": "articles/openmediavault-nas-raspberrypi.md"
-    },
-    {
-        "id": "raspberrypi-adguard-home",
-        "title": "Use Your Raspberry Pi as a Network-Wide Ad Blocker with AdGuard Home",
-        "summary": "Set up AdGuard Home on your Raspberry Pi to block ads, trackers, and malicious domains across all your devices.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Raspberry Pi",
-            "Networking",
-            "Privacy",
-            "Ad Blocker"
-        ],
-        "author": "Unfinished",
-        "file": "articles/raspberrypi-adguard-home.md"
-    },
-    {
-        "id": "raspberrypi-touchscreen-setup",
-        "title": "Add a Touchscreen Display to Your Raspberry Pi",
-        "summary": "Learn how to connect and configure a touchscreen display for your Raspberry Pi.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Raspberry Pi",
-            "Display",
-            "Hardware",
-            "DIY"
-        ],
-        "author": "Unfinished",
-        "file": "articles/raspberrypi-touchscreen-setup.md"
-    },
-    {
-        "id": "wireguard-vpn-raspberrypi",
-        "title": "Create a Personal VPN with WireGuard on Raspberry Pi",
-        "summary": "Learn how to turn your Raspberry Pi into a secure personal VPN server using WireGuard.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Raspberry Pi",
-            "Networking",
-            "Privacy",
-            "Security"
-        ],
-        "author": "Unfinished",
-        "file": "articles/wireguard-vpn-raspberrypi.md"
-    },
-    {
-        "id": "home-assistant-raspberrypi",
-        "title": "Install Home Assistant on Raspberry Pi",
-        "summary": "A step-by-step guide to setting up Home Assistant on a Raspberry Pi for home automation and device control.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Raspberry Pi",
-            "Smart Home",
-            "Automation"
-        ],
-        "author": "Unfinished",
-        "file": "articles/home-assistant-raspberrypi.md"
-    },
-    {
-        "id": "stream-steamlink-ipad",
-        "title": "Stream PC Games to iPad with Steam Link",
-        "summary": "A detailed guide on using Steam Link to stream your PC games to an iPad, with controller setup, network optimization, and troubleshooting tips.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "iPad",
-            "Steam Link",
-            "Streaming"
-        ],
-        "author": "Unfinished",
-        "file": "articles/stream-steamlink-ipad.md"
-    },
-    {
-        "id": "rogally-undervolt-guide",
-        "title": "Undervolt the ROG Ally for Better Battery Life and Performance",
-        "summary": "Lower your ROG Ally\u2019s power draw and improve thermals with safe undervolting techniques.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "ROG Ally",
-            "Performance",
-            "Tweaks",
-            "Windows"
-        ],
-        "author": "Unfinished",
-        "file": "articles/rogally-undervolt-guide.md"
-    },
-    {
-        "id": "rogally-install-emulators",
-        "title": "How to Install Emulators on the ROG Ally",
-        "summary": "Turn your ROG Ally into a powerful retro gaming machine with this emulator setup guide.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "ROG Ally",
-            "Emulation",
-            "Gaming",
-            "Windows"
-        ],
-        "author": "Unfinished",
-        "file": "articles/rogally-install-emulators.md"
-    },
-    {
-        "id": "raspberrypi-snapcast-audio-stream",
-        "title": "Stream Audio to Multiple Devices with Raspberry Pi and Snapcast",
-        "summary": "Create a synchronized multi-room audio system using Raspberry Pi and Snapcast.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Raspberry Pi",
-            "Audio",
-            "Streaming",
-            "Networking"
-        ],
-        "author": "Unfinished",
-        "file": "articles/raspberrypi-snapcast-audio-stream.md"
-    },
-    {
-        "id": "raspberrypi-nginx-webserver",
-        "title": "Host a Personal Website Using Raspberry Pi and NGINX",
-        "summary": "Turn your Raspberry Pi into a fully functional personal web server using NGINX.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Raspberry Pi",
-            "Web Server",
-            "NGINX",
-            "Networking"
-        ],
-        "author": "Unfinished",
-        "file": "articles/raspberrypi-nginx-webserver.md"
-    },
-    {
-        "id": "raspberrypi-speed-monitor",
-        "title": "Use Raspberry Pi as a Network-Wide Speed Monitor",
-        "summary": "Set up your Raspberry Pi to monitor internet speed and log results over time using Speedtest and Grafana.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Home Lab",
-            "Monitoring",
-            "Networking",
-            "Raspberry Pi"
-        ],
-        "author": "Unfinished",
-        "file": "articles/raspberrypi-speed-monitor.md"
-    },
-    {
-        "id": "steamdeck-desktop-mode",
-        "title": "How to Use Steam Deck in Desktop Mode",
-        "summary": "Unlock the full Linux desktop experience on your Steam Deck to install apps, manage files, and more.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Linux",
-            "Steam Deck"
-        ],
-        "author": "Unfinished",
-        "file": "articles/steamdeck-desktop-mode.md"
-    },
-    {
-        "id": "SDCards",
-        "title": "SD Cards",
-        "summary": "Depending on the model you have the Steam Deck doesn\u2019t have a lot of storage space. Even the 512gb version will fill up fast with AAA games. Upgrading the internal storage and adding an SD Card will increase your storage space.",
-        "image": "/images/IMG_1291.png",
-        "categories": [
-            "Gaming",
-            "Steam Deck"
-        ],
-        "author": "Byron",
-        "file": "articles/SDCards.md"
-    },
-    {
-        "id": "heroic-launcher-steamdeck",
-        "title": "How to Use Heroic Launcher to Play Epic Games on Steam Deck",
-        "summary": "Install and use Heroic Launcher to play Epic Games and GOG titles on your Steam Deck with full controller support.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Epic Games",
-            "GOG",
-            "Game Launchers",
-            "Linux",
-            "Steam Deck"
-        ],
-        "author": "Unfinished",
-        "file": "articles/heroic-launcher-steamdeck.md"
-    },
-    {
-        "id": "steamdeck-xcloud-setup",
-        "title": "Turn Your Steam Deck Into a Portable Xbox with xCloud + Edge",
-        "summary": "Stream Xbox Game Pass titles from the cloud using Microsoft Edge on Steam Deck \u2014 no Windows install required.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Cloud Gaming",
-            "Game Pass",
-            "Steam Deck",
-            "Streaming",
-            "Xbox"
-        ],
-        "author": "Unfinished",
-        "file": "articles/steamdeck-xcloud-setup.md"
-    },
-    {
-        "id": "steamdeck-moonlight-streaming",
-        "title": "Set Up Moonlight Game Streaming on Steam Deck",
-        "summary": "Stream PC games to your Steam Deck using Moonlight and Sunshine for low-latency remote play.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "PC",
-            "Remote Play",
-            "Steam Deck",
-            "Streaming"
-        ],
-        "author": "Unfinished",
-        "file": "articles/steamdeck-moonlight-streaming.md"
-    },
-    {
-        "id": "steamdeck-performance-overlay",
-        "title": "How to Enable Performance Overlays on Steam Deck",
-        "summary": "Monitor real-time FPS, temperatures, and system performance using SteamOS overlays and MangoHUD on your Steam Deck.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Monitoring",
-            "Performance",
-            "Steam Deck"
-        ],
-        "author": "Unfinished",
-        "file": "articles/steamdeck-performance-overlay.md"
-    },
-    {
-        "id": "steamdeck-ssd-upgrade",
-        "title": "How to Upgrade the SSD on Steam Deck",
-        "summary": "Step-by-step guide to safely upgrade the internal SSD on your Steam Deck with performance and compatibility tips.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Hardware",
-            "Steam Deck",
-            "Storage",
-            "Upgrades"
-        ],
-        "author": "Unfinished",
-        "file": "articles/steamdeck-ssd-upgrade.md"
-    },
-    {
-        "id": "steamdeck-connect-to-tv",
-        "title": "How to Connect the Steam Deck to a TV or Monitor",
-        "summary": "Step-by-step guide to connect your Steam Deck to an external display using USB-C or the official Dock for big-screen gaming.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Display",
-            "Docking",
-            "Gaming Setup",
-            "Steam Deck"
-        ],
-        "author": "Unfinished",
-        "file": "articles/steamdeck-connect-to-tv.md"
-    },
-    {
-        "id": "steamdeck-setup-lutris",
-        "title": "How to Set Up Lutris on Steam Deck",
-        "summary": "Install and configure Lutris on your Steam Deck to play non-Steam games from GOG, Epic, Battle.net, and more.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Gaming Platforms",
-            "Linux",
-            "Lutris",
-            "Steam Deck"
-        ],
-        "author": "Unfinished",
-        "file": "articles/steamdeck-setup-lutris.md"
-    },
-    {
-        "id": "raspberrypi-os-setup",
-        "title": "How to Set Up Raspberry Pi OS on a New Pi",
-        "summary": "Beginner-friendly guide to installing Raspberry Pi OS and getting your Pi up and running in under 30 minutes.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Beginner Guides",
-            "Operating Systems",
-            "Raspberry Pi",
-            "Setup"
-        ],
-        "author": "Unfinished",
-        "file": "articles/raspberrypi-os-setup.md"
-    },
-    {
-        "id": "raspberrypi-install-pihole",
-        "title": "How to Install Pi-hole on Raspberry Pi",
-        "summary": "Block ads and trackers across your entire home network by turning your Raspberry Pi into a network-wide ad blocker.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Networking",
-            "Privacy",
-            "Raspberry Pi",
-            "Utilities"
-        ],
-        "author": "Unfinished",
-        "file": "articles/raspberrypi-install-pihole.md"
-    },
-    {
-        "id": "raspberrypi-retro-console",
-        "title": "Turn Your Raspberry Pi into a Retro Game Console",
-        "summary": "Use EmulationStation and RetroArch to transform your Raspberry Pi into an all-in-one console for classic games.",
-        "image": "/images/No-Image.png",
-        "categories": [
-            "Emulation",
-            "Raspberry Pi",
-            "Retro Gaming",
-            "Setup"
-        ],
-        "author": "Unfinished",
-        "file": "articles/raspberrypi-retro-console.md"
-    }
+    "id": "omv-remote-access-ddns",
+    "title": "Access Your OpenMediaVault NAS Remotely with Dynamic DNS (DDNS)",
+    "summary": "Securely connect to your OMV server from anywhere using Dynamic DNS and port forwarding.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "OpenMediaVault",
+      "Networking",
+      "Remote Access",
+      "DDNS"
+    ],
+    "author": "Unfinished",
+    "file": "articles/omv-remote-access-ddns.md"
+  },
+  {
+    "id": "raspberrypi-touchscreen-setup",
+    "title": "Add a Touchscreen Display to Your Raspberry Pi",
+    "summary": "Learn how to connect and configure a touchscreen display for your Raspberry Pi.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Raspberry Pi",
+      "Display",
+      "Hardware",
+      "DIY"
+    ],
+    "author": "Unfinished",
+    "file": "articles/raspberrypi-touchscreen-setup.md"
+  },
+  {
+    "id": "automated-backups-duplicati",
+    "title": "Automated Backups with Duplicati",
+    "summary": "Learn how to set up automated encrypted backups using Duplicati on any system.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Backup",
+      "Duplicati",
+      "Automation",
+      "Security"
+    ],
+    "author": "Unfinished",
+    "file": "articles/automated-backups-duplicati.md"
+  },
+  {
+    "id": "Sonarr",
+    "title": "Complete Guide to Using Sonarr",
+    "summary": "Sonarr is an automated TV show management tool. It monitors TV series you want,\nsearches for new episodes, downloads them automatically through your download client,\nrenames them, and organizes them into your TV library. It integrates with Plex, Jellyfin, and Emby.",
+    "image": "/images/No-Image.png",
+    "categories": [],
+    "author": "",
+    "file": "articles/Sonarr.md"
+  },
+  {
+    "id": "omv-ftp-access",
+    "title": "Configure FTP Access on OpenMediaVault for External Transfers",
+    "summary": "Learn how to enable and secure FTP on OMV to transfer files externally or through custom apps and clients.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "OpenMediaVault",
+      "FTP",
+      "File Transfer",
+      "NAS",
+      "Remote Access"
+    ],
+    "author": "Unfinished",
+    "file": "articles/omv-ftp-access.md"
+  },
+  {
+    "id": "wireguard-vpn-raspberrypi",
+    "title": "Create a Personal VPN with WireGuard on Raspberry Pi",
+    "summary": "Learn how to turn your Raspberry Pi into a secure personal VPN server using WireGuard.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Raspberry Pi",
+      "Networking",
+      "Privacy",
+      "Security"
+    ],
+    "author": "Unfinished",
+    "file": "articles/wireguard-vpn-raspberrypi.md"
+  },
+  {
+    "id": "DeckyLoader",
+    "title": "Decky Loader",
+    "summary": "Decky Loader is a program for installing 3rd party plugins into Game Mode. There is a lot of QOL and customization plugins available.",
+    "image": "/images/IMG_1328.png",
+    "categories": [
+      "Beginner Guides",
+      "Hardware",
+      "Linux",
+      "Operating Systems",
+      "Setup",
+      "Steam Deck",
+      "Upgrades"
+    ],
+    "author": "Byron",
+    "file": "articles/DeckyLoader.md"
+  },
+  {
+    "id": "DeckyPlugins",
+    "title": "Decky Loader Plugins",
+    "summary": "List of plugins for DeckyLoader",
+    "image": "/images/IMG_1323.png",
+    "categories": [
+      "Hardware",
+      "Setup",
+      "Steam Deck"
+    ],
+    "author": "Byron",
+    "file": "articles/DeckyPlugins.md"
+  },
+  {
+    "id": "enable-docker-portainer-omv",
+    "title": "Enable Docker and Portainer in OpenMediaVault",
+    "summary": "Learn how to run Docker containers and manage them easily through the Portainer interface in OMV.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "OpenMediaVault",
+      "Docker",
+      "Portainer",
+      "Raspberry Pi",
+      "Self-Hosting"
+    ],
+    "author": "Unfinished",
+    "file": "articles/enable-docker-portainer-omv.md"
+  },
+  {
+    "id": "omv-smb-cifs-setup",
+    "title": "Enable Remote SMB/CIFS Access in OpenMediaVault",
+    "summary": "Learn how to share files from your OMV NAS using SMB/CIFS to access them from Windows, macOS, or Linux.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "OpenMediaVault",
+      "File Sharing",
+      "SMB",
+      "CIFS",
+      "NAS"
+    ],
+    "author": "Unfinished",
+    "file": "articles/omv-smb-cifs-setup.md"
+  },
+  {
+    "id": "retroachievements-steamdeck",
+    "title": "Enable RetroAchievements on Steam Deck with EmuDeck",
+    "summary": "Unlock achievements in retro games using EmuDeck and RetroArch with RetroAchievements integration.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Steam Deck",
+      "Emulation",
+      "RetroArch",
+      "Setup"
+    ],
+    "author": "Unfinished",
+    "file": "articles/retroachievements-steamdeck.md"
+  },
+  {
+    "id": "raspberrypi-nginx-webserver",
+    "title": "Host a Personal Website Using Raspberry Pi and NGINX",
+    "summary": "Turn your Raspberry Pi into a fully functional personal web server using NGINX.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Raspberry Pi",
+      "Web Server",
+      "NGINX",
+      "Networking"
+    ],
+    "author": "Unfinished",
+    "file": "articles/raspberrypi-nginx-webserver.md"
+  },
+  {
+    "id": "steamdeck-connect-to-tv",
+    "title": "How to Connect the Steam Deck to a TV or Monitor",
+    "summary": "Step-by-step guide to connect your Steam Deck to an external display using USB-C or the official Dock for big-screen gaming.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Display",
+      "Docking",
+      "Gaming Setup",
+      "Steam Deck"
+    ],
+    "author": "Unfinished",
+    "file": "articles/steamdeck-connect-to-tv.md"
+  },
+  {
+    "id": "steamdeck-performance-overlay",
+    "title": "How to Enable Performance Overlays on Steam Deck",
+    "summary": "Monitor real-time FPS, temperatures, and system performance using SteamOS overlays and MangoHUD on your Steam Deck.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Monitoring",
+      "Performance",
+      "Steam Deck"
+    ],
+    "author": "Unfinished",
+    "file": "articles/steamdeck-performance-overlay.md"
+  },
+  {
+    "id": "rogally-install-emulators",
+    "title": "How to Install Emulators on the ROG Ally",
+    "summary": "Turn your ROG Ally into a powerful retro gaming machine with this emulator setup guide.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "ROG Ally",
+      "Emulation",
+      "Gaming",
+      "Windows"
+    ],
+    "author": "Unfinished",
+    "file": "articles/rogally-install-emulators.md"
+  },
+  {
+    "id": "raspberrypi-install-pihole",
+    "title": "How to Install Pi-hole on Raspberry Pi",
+    "summary": "Block ads and trackers across your entire home network by turning your Raspberry Pi into a network-wide ad blocker.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Networking",
+      "Privacy",
+      "Raspberry Pi",
+      "Utilities"
+    ],
+    "author": "Unfinished",
+    "file": "articles/raspberrypi-install-pihole.md"
+  },
+  {
+    "id": "steamdeck-setup-lutris",
+    "title": "How to Set Up Lutris on Steam Deck",
+    "summary": "Install and configure Lutris on your Steam Deck to play non-Steam games from GOG, Epic, Battle.net, and more.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Gaming Platforms",
+      "Linux",
+      "Lutris",
+      "Steam Deck"
+    ],
+    "author": "Unfinished",
+    "file": "articles/steamdeck-setup-lutris.md"
+  },
+  {
+    "id": "raspberrypi-os-setup",
+    "title": "How to Set Up Raspberry Pi OS on a New Pi",
+    "summary": "Beginner-friendly guide to installing Raspberry Pi OS and getting your Pi up and running in under 30 minutes.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Beginner Guides",
+      "Operating Systems",
+      "Raspberry Pi",
+      "Setup"
+    ],
+    "author": "Unfinished",
+    "file": "articles/raspberrypi-os-setup.md"
+  },
+  {
+    "id": "steamdeck-ssd-upgrade",
+    "title": "How to Upgrade the SSD on Steam Deck",
+    "summary": "Step-by-step guide to safely upgrade the internal SSD on your Steam Deck with performance and compatibility tips.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Hardware",
+      "Steam Deck",
+      "Storage",
+      "Upgrades"
+    ],
+    "author": "Unfinished",
+    "file": "articles/steamdeck-ssd-upgrade.md"
+  },
+  {
+    "id": "heroic-launcher-steamdeck",
+    "title": "How to Use Heroic Launcher to Play Epic Games on Steam Deck",
+    "summary": "Install and use Heroic Launcher to play Epic Games and GOG titles on your Steam Deck with full controller support.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Epic Games",
+      "GOG",
+      "Game Launchers",
+      "Linux",
+      "Steam Deck"
+    ],
+    "author": "Unfinished",
+    "file": "articles/heroic-launcher-steamdeck.md"
+  },
+  {
+    "id": "steamdeck-desktop-mode",
+    "title": "How to Use Steam Deck in Desktop Mode",
+    "summary": "Unlock the full Linux desktop experience on your Steam Deck to install apps, manage files, and more.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Linux",
+      "Steam Deck"
+    ],
+    "author": "Unfinished",
+    "file": "articles/steamdeck-desktop-mode.md"
+  },
+  {
+    "id": "syncthing-omv",
+    "title": "Install and Configure Syncthing on OpenMediaVault",
+    "summary": "Learn how to set up Syncthing on OMV to automatically sync files between your devices securely.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "OpenMediaVault",
+      "Syncthing",
+      "File Sync"
+    ],
+    "author": "Unfinished",
+    "file": "articles/syncthing-omv.md"
+  },
+  {
+    "id": "syncthing-windows-setup",
+    "title": "Install and Use Syncthing on Windows",
+    "summary": "Learn how to install and run Syncthing on Windows to securely sync files between your devices.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Syncthing",
+      "Windows",
+      "File Sync"
+    ],
+    "author": "Unfinished",
+    "file": "articles/syncthing-windows-setup.md"
+  },
+  {
+    "id": "home-assistant-raspberrypi",
+    "title": "Install Home Assistant on Raspberry Pi",
+    "summary": "A step-by-step guide to setting up Home Assistant on a Raspberry Pi for home automation and device control.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Raspberry Pi",
+      "Smart Home",
+      "Automation"
+    ],
+    "author": "Unfinished",
+    "file": "articles/home-assistant-raspberrypi.md"
+  },
+  {
+    "id": "install-omv-old-pc",
+    "title": "Install OpenMediaVault on an Old PC",
+    "summary": "Repurpose your old computer into a powerful NAS with OpenMediaVault.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "OpenMediaVault",
+      "Old Hardware",
+      "NAS",
+      "Repurposing"
+    ],
+    "author": "Unfinished",
+    "file": "articles/install-omv-old-pc.md"
+  },
+  {
+    "id": "uptime-kuma-omv",
+    "title": "Install Uptime Kuma in Docker on OpenMediaVault",
+    "summary": "Use Docker on OMV to run Uptime Kuma, a self-hosted uptime monitoring tool with a slick UI.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "OpenMediaVault",
+      "Docker",
+      "Monitoring",
+      "Uptime Kuma"
+    ],
+    "author": "Unfinished",
+    "file": "articles/uptime-kuma-omv.md"
+  },
+  {
+    "id": "installing-emudeck",
+    "title": "Installing EmuDeck on Steam Deck",
+    "summary": "Complete setup guide for EmuDeck on the Steam Deck, including configuration tips and troubleshooting.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Steam Deck",
+      "Emulation",
+      "EmuDeck",
+      "Setup"
+    ],
+    "author": "Unfinished",
+    "file": "articles/installing-emudeck.md"
+  },
+  {
+    "id": "omv-smart-monitoring",
+    "title": "Monitor Drive Health with SMART and Email Alerts in OpenMediaVault",
+    "summary": "Configure SMART monitoring and email alerts to protect your NAS from early drive failures.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "OpenMediaVault",
+      "Monitoring",
+      "SMART",
+      "Email Alerts",
+      "Storage"
+    ],
+    "author": "Unfinished",
+    "file": "articles/omv-smart-monitoring.md"
+  },
+  {
+    "id": "mount-nas-linux-steamdeck",
+    "title": "Mounting a NAS Share on Steam Deck or Linux",
+    "summary": "Learn how to access your NAS from a Steam Deck or Linux system using SMB or NFS protocols.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Steam Deck",
+      "NAS",
+      "Linux",
+      "Networking"
+    ],
+    "author": "Unfinished",
+    "file": "articles/mount-nas-linux-steamdeck.md"
+  },
+  {
+    "id": "PluginCSSLoader",
+    "title": "Plugin: CSS Loader",
+    "summary": "CSS Loader is a Decky Loader plugin to customize the theme and layout of your Game Mode Library.",
+    "image": "/images/IMG_1334.png",
+    "categories": [
+      "Gaming",
+      "Steam Deck"
+    ],
+    "author": "Byron",
+    "file": "articles/PluginCSSLoader.md"
+  },
+  {
+    "id": "PluginSteamGridDB",
+    "title": "Plugin: SteamGridDB",
+    "summary": "SteamGridDB is a Decky Loader plugin to add custom artwork to your games.",
+    "image": "/images/IMG_1330.png",
+    "categories": [
+      "Gaming",
+      "Steam Deck"
+    ],
+    "author": "Byron",
+    "file": "articles/PluginSteamGridDB.md"
+  },
+  {
+    "id": "remote-desktop-vnc-rdp-pi",
+    "title": "Remote Desktop to Raspberry Pi with VNC and RDP",
+    "summary": "Access your Raspberry Pi remotely with a full desktop interface using either VNC or Microsoft RDP.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Raspberry Pi",
+      "Remote Access",
+      "VNC",
+      "RDP"
+    ],
+    "author": "Unfinished",
+    "file": "articles/remote-desktop-vnc-rdp-pi.md"
+  },
+  {
+    "id": "restore-duplicati-backups",
+    "title": "Restoring Files with Duplicati",
+    "summary": "Learn how to safely and efficiently restore files from Duplicati backups.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Backup",
+      "Duplicati",
+      "Restore",
+      "Security"
+    ],
+    "author": "Unfinished",
+    "file": "articles/restore-duplicati-backups.md"
+  },
+  {
+    "id": "syncthing-docker-setup",
+    "title": "Run Syncthing in Docker",
+    "summary": "Deploy Syncthing in a Docker container for easy, lightweight, and secure file syncing.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Syncthing",
+      "Docker",
+      "Containers",
+      "File Sync"
+    ],
+    "author": "Unfinished",
+    "file": "articles/syncthing-docker-setup.md"
+  },
+  {
+    "id": "syncthing-steamdeck-background",
+    "title": "Run Syncthing in the Background on Steam Deck",
+    "summary": "Learn how to install Syncthing and keep it running in the background on your Steam Deck for seamless file syncing.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Syncthing",
+      "Steam Deck",
+      "File Sync",
+      "Linux"
+    ],
+    "author": "Unfinished",
+    "file": "articles/syncthing-steamdeck-background.md"
+  },
+  {
+    "id": "tdarr-in-docker",
+    "title": "Running Tdarr in Docker for Automated Media Transcoding",
+    "summary": "Set up Tdarr in Docker to automatically scan and transcode your media library for efficient storage and playback.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Docker",
+      "Media",
+      "Transcoding",
+      "Containers"
+    ],
+    "author": "Unfinished",
+    "file": "articles/tdarr-in-docker.md"
+  },
+  {
+    "id": "SDCards",
+    "title": "SD Cards",
+    "summary": "Depending on the model you have the Steam Deck doesn’t have a lot of storage space. Even the 512gb version will fill up fast with AAA games. Upgrading the internal storage and adding an SD Card will increase your storage space.",
+    "image": "/images/IMG_1291.png",
+    "categories": [
+      "Gaming",
+      "Steam Deck"
+    ],
+    "author": "Byron",
+    "file": "articles/SDCards.md"
+  },
+  {
+    "id": "openmediavault-nas-raspberrypi",
+    "title": "Set Up a NAS Server with OpenMediaVault on Raspberry Pi",
+    "summary": "Transform your Raspberry Pi into a powerful home NAS using OpenMediaVault for file sharing, backups, and media streaming.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Raspberry Pi",
+      "OpenMediaVault",
+      "NAS",
+      "Storage",
+      "Home Server"
+    ],
+    "author": "Unfinished",
+    "file": "articles/openmediavault-nas-raspberrypi.md"
+  },
+  {
+    "id": "omv-time-machine-macos",
+    "title": "Set Up a Time Machine Backup Server with OpenMediaVault for macOS",
+    "summary": "Turn your OMV NAS into a Time Machine-compatible backup destination for all your Mac devices over the network.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "OpenMediaVault",
+      "macOS",
+      "Backup",
+      "Time Machine",
+      "Home Server"
+    ],
+    "author": "Unfinished",
+    "file": "articles/omv-time-machine-macos.md"
+  },
+  {
+    "id": "omv-usb-backups",
+    "title": "Set Up Automatic Backups to External Drives in OpenMediaVault",
+    "summary": "Configure scheduled backups from OMV to USB drives for redundancy and peace of mind.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "OpenMediaVault",
+      "Backup",
+      "USB",
+      "Storage",
+      "Automation"
+    ],
+    "author": "Unfinished",
+    "file": "articles/omv-usb-backups.md"
+  },
+  {
+    "id": "omv-docker-lidarr",
+    "title": "Set Up Lidarr in Docker with OpenMediaVault",
+    "summary": "Learn how to deploy Lidarr in a Docker container on OMV to automatically manage your music library with rich metadata and automation.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "OpenMediaVault",
+      "Docker",
+      "Lidarr",
+      "Containers",
+      "Music"
+    ],
+    "author": "Unfinished",
+    "file": "articles/omv-docker-lidarr.md"
+  },
+  {
+    "id": "steamdeck-moonlight-streaming",
+    "title": "Set Up Moonlight Game Streaming on Steam Deck",
+    "summary": "Stream PC games to your Steam Deck using Moonlight and Sunshine for low-latency remote play.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "PC",
+      "Remote Play",
+      "Steam Deck",
+      "Streaming"
+    ],
+    "author": "Unfinished",
+    "file": "articles/steamdeck-moonlight-streaming.md"
+  },
+  {
+    "id": "omv-docker-nginxproxymanager",
+    "title": "Set Up Nginx Proxy Manager in Docker on OpenMediaVault",
+    "summary": "Learn how to deploy Nginx Proxy Manager in a Docker container on OMV to manage reverse proxies and secure access with HTTPS.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "OpenMediaVault",
+      "Docker",
+      "Nginx Proxy Manager",
+      "Networking",
+      "Containers"
+    ],
+    "author": "Unfinished",
+    "file": "articles/omv-docker-nginxproxymanager.md"
+  },
+  {
+    "id": "omv-rsync-backup-server",
+    "title": "Set Up OpenMediaVault as an Rsync Backup Server",
+    "summary": "Learn how to configure OMV as a backup destination using Rsync for efficient, incremental file syncing across your network.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "OpenMediaVault",
+      "Backup",
+      "Rsync",
+      "NAS",
+      "Storage"
+    ],
+    "author": "Unfinished",
+    "file": "articles/omv-rsync-backup-server.md"
+  },
+  {
+    "id": "omv-docker-plex",
+    "title": "Set Up Plex in Docker with OpenMediaVault",
+    "summary": "Deploy Plex Media Server using Docker and Portainer on OMV to stream your movies, TV shows, and music with ease.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "OpenMediaVault",
+      "Docker",
+      "Plex",
+      "Media Server",
+      "Containers"
+    ],
+    "author": "Unfinished",
+    "file": "articles/omv-docker-plex.md"
+  },
+  {
+    "id": "omv-docker-radarr",
+    "title": "Set Up Radarr in Docker with OpenMediaVault",
+    "summary": "Learn how to deploy Radarr in a Docker container on OMV to automate downloading and organizing movies.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "OpenMediaVault",
+      "Docker",
+      "Radarr",
+      "Media Server",
+      "Containers"
+    ],
+    "author": "Unfinished",
+    "file": "articles/omv-docker-radarr.md"
+  },
+  {
+    "id": "omv-docker-sonarr",
+    "title": "Set Up Sonarr in Docker with OpenMediaVault",
+    "summary": "Learn how to deploy Sonarr in a Docker container on OMV to automatically manage and download your TV shows.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "OpenMediaVault",
+      "Docker",
+      "Sonarr",
+      "Media Server",
+      "Containers"
+    ],
+    "author": "Unfinished",
+    "file": "articles/omv-docker-sonarr.md"
+  },
+  {
+    "id": "tailscale-omv-remote-access",
+    "title": "Set Up Tailscale on OpenMediaVault for Secure Remote Access",
+    "summary": "Install and configure Tailscale on OMV to securely access your NAS and containers remotely without needing to open ports or use DDNS.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "OpenMediaVault",
+      "Remote Access",
+      "Networking",
+      "Tailscale"
+    ],
+    "author": "Unfinished",
+    "file": "articles/tailscale-omv-remote-access.md"
+  },
+  {
+    "id": "SettingUpEmuDeck",
+    "title": "Setting Up EmuDeck",
+    "summary": "Setup and configure EmuDeck on your Steam Deck with ROMs, BIOS files, cloud services, and Steam library integration.",
+    "image": "/images/IMG_1301.png",
+    "categories": [
+      "Gaming",
+      "Gaming Setup",
+      "Linux",
+      "Steam Deck",
+      "EmuDeck"
+    ],
+    "author": "Byron",
+    "file": "articles/SettingUpEmuDeck.md"
+  },
+  {
+    "id": "raspberrypi-snapcast-audio-stream",
+    "title": "Stream Audio to Multiple Devices with Raspberry Pi and Snapcast",
+    "summary": "Create a synchronized multi-room audio system using Raspberry Pi and Snapcast.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Raspberry Pi",
+      "Audio",
+      "Streaming",
+      "Networking"
+    ],
+    "author": "Unfinished",
+    "file": "articles/raspberrypi-snapcast-audio-stream.md"
+  },
+  {
+    "id": "stream-steamlink-ipad",
+    "title": "Stream PC Games to iPad with Steam Link",
+    "summary": "A detailed guide on using Steam Link to stream your PC games to an iPad, with controller setup, network optimization, and troubleshooting tips.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "iPad",
+      "Steam Link",
+      "Streaming"
+    ],
+    "author": "Unfinished",
+    "file": "articles/stream-steamlink-ipad.md"
+  },
+  {
+    "id": "SUDOPassword",
+    "title": "SUDO Password",
+    "summary": "The SUDO password is the super user password. Similar to the Administrator account on Windows. It is needed to install anything that uses or changes the secure part of the system.",
+    "image": "/images/IMG_1290.png",
+    "categories": [
+      "Gaming",
+      "Steam Deck"
+    ],
+    "author": "Byron",
+    "file": "articles/SUDOPassword.md"
+  },
+  {
+    "id": "syncthing-raspberrypi-pc-sync",
+    "title": "Sync Folders Between Raspberry Pi and PC with Syncthing",
+    "summary": "Learn how to keep files in sync between your Raspberry Pi and desktop using Syncthing.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Syncthing",
+      "Raspberry Pi",
+      "File Sync",
+      "Networking"
+    ],
+    "author": "Unfinished",
+    "file": "articles/syncthing-raspberrypi-pc-sync.md"
+  },
+  {
+    "id": "raspberrypi-retro-console",
+    "title": "Turn Your Raspberry Pi into a Retro Game Console",
+    "summary": "Use EmulationStation and RetroArch to transform your Raspberry Pi into an all-in-one console for classic games.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Emulation",
+      "Raspberry Pi",
+      "Retro Gaming",
+      "Setup"
+    ],
+    "author": "Unfinished",
+    "file": "articles/raspberrypi-retro-console.md"
+  },
+  {
+    "id": "steamdeck-xcloud-setup",
+    "title": "Turn Your Steam Deck Into a Portable Xbox with xCloud + Edge",
+    "summary": "Stream Xbox Game Pass titles from the cloud using Microsoft Edge on Steam Deck -- no Windows install required.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Cloud Gaming",
+      "Game Pass",
+      "Steam Deck",
+      "Streaming",
+      "Xbox"
+    ],
+    "author": "Unfinished",
+    "file": "articles/steamdeck-xcloud-setup.md"
+  },
+  {
+    "id": "rogally-undervolt-guide",
+    "title": "Undervolt the ROG Ally for Better Battery Life and Performance",
+    "summary": "Lower your ROG Ally’s power draw and improve thermals with safe undervolting techniques.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "ROG Ally",
+      "Performance",
+      "Tweaks",
+      "Windows"
+    ],
+    "author": "Unfinished",
+    "file": "articles/rogally-undervolt-guide.md"
+  },
+  {
+    "id": "raspberrypi-speed-monitor",
+    "title": "Use Raspberry Pi as a Network-Wide Speed Monitor",
+    "summary": "Set up your Raspberry Pi to monitor internet speed and log results over time using Speedtest and Grafana.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Home Lab",
+      "Monitoring",
+      "Networking",
+      "Raspberry Pi"
+    ],
+    "author": "Unfinished",
+    "file": "articles/raspberrypi-speed-monitor.md"
+  },
+  {
+    "id": "raspberrypi-adguard-home",
+    "title": "Use Your Raspberry Pi as a Network-Wide Ad Blocker with AdGuard Home",
+    "summary": "Set up AdGuard Home on your Raspberry Pi to block ads, trackers, and malicious domains across all your devices.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Raspberry Pi",
+      "Networking",
+      "Privacy",
+      "Ad Blocker"
+    ],
+    "author": "Unfinished",
+    "file": "articles/raspberrypi-adguard-home.md"
+  }
 ]
