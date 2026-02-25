@@ -42,11 +42,36 @@
     "file": "articles/automated-backups-duplicati.md"
   },
   {
+    "id": "Radarr",
+    "title": "Complete Guide to Using Radarr",
+    "summary": "Radarr is an automated movie management tool that tracks movies you want, searches for releases,\ndownloads them via your download client, renames them, and moves them into your movie library.\nIt integrates with Plex, Jellyfin, and Emby.",
+    "image": "/images/No-Image.png",
+    "categories": [
+      "Beginner Guides",
+      "Hardware",
+      "Linux",
+      "Operating Systems",
+      "Setup",
+      "Tadarr",
+      "Upgrades"
+    ],
+    "author": "",
+    "file": "articles/Radarr.md"
+  },
+  {
     "id": "Sonarr",
     "title": "Complete Guide to Using Sonarr",
     "summary": "Sonarr is an automated TV show management tool. It monitors TV series you want,\nsearches for new episodes, downloads them automatically through your download client,\nrenames them, and organizes them into your TV library. It integrates with Plex, Jellyfin, and Emby.",
     "image": "/images/No-Image.png",
-    "categories": [],
+    "categories": [
+      "Beginner Guides",
+      "Hardware",
+      "Linux",
+      "Operating Systems",
+      "Setup",
+      "Tadarr",
+      "Upgrades"
+    ],
     "author": "",
     "file": "articles/Sonarr.md"
   },
