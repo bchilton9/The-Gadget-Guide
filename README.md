@@ -15,7 +15,7 @@ ___
 The Gadget Guide is a clean, mobile-friendly site offering step-by-step tech tutorials, tips, and plugin guides for devices like the Steam Deck, Raspberry Pi, iPhone, and more.
 
 View the site at
-http://thegadget.guide
+[http://thegadgetguide.chilsoft.com/](http://thegadgetguide.chilsoft.com/)
 
 ___
 
